@@ -17,6 +17,8 @@ import org.hibernate.criterion.Restrictions;
  *
  * @author Eli
  */
+/*This class holds all operations related to book category*/
+
 public class BookCategoryDao {
     Session session = null;
     public void addBookCategory(Bookcategory category){
