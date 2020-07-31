@@ -15,7 +15,7 @@ import org.hibernate.criterion.Restrictions;
 
 /**
  *
- * @author Eli-PC
+ * @author Eli
  */
 public class BookCategoryDao {
     Session session = null;
