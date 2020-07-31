@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2020 12:56:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="eli.auca.model.Checkinout" table="checkinout" catalog="librarysystem" optimistic-lock="version">
+        <id name="SN" type="java.lang.Integer">
+            <column name="S_N" />
+            <generator class="identity" />
+        </id>
+        <property name="dateTime" type="date">
+            <column name="dateTime" length="10" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="45" not-null="true" />
+        </property>
+        <property name="operationCategory" type="string">
+            <column name="OperationCategory" length="15" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
